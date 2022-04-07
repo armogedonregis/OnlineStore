@@ -2,8 +2,8 @@ import styled from "styled-components";
 import tw from "twin.macro";
 
 const NavbarContainer = styled.div`
-  ${tw`    
-  w-full
+  ${tw`
+  w-full  
   items-center
   h-[3rem]
   bg-blackBg
@@ -25,6 +25,8 @@ const ItemContainer = styled.div`
 const Item = styled.button`
   ${tw` 
   relative
+  hover:bg-gray
+  p-2
 `}
 `;
 
@@ -65,15 +67,18 @@ export default function Navbar() {
             </a>
           </Item>
           <Item>
-            <a className="flex" href="#">
+            <a href="#">
               Сантехнические работы
-              <img className="mt-1" width="25px" height="25px" src="./assets/vector/chevron_down.svg" />
             </a>
           </Item>
           <Item>
-            <a className="flex" href="#">
+            <a href="#">
               Цены
-              <img className="mt-1" width="25px" height="25px" src="./assets/vector/chevron_down.svg" />
+            </a>
+          </Item>
+          <Item>
+            <a href="#">
+              О специалисте
             </a>
           </Item>
         </ItemContainer>
